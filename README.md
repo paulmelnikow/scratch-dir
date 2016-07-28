@@ -8,7 +8,7 @@ initialization, and deletes it when finished.
 import unittest
 from scratch_dir import ScratchDirMixin
 
-class TestThing(CreateScratchDirectoryMixin, unittest.TestCase):
+class TestThing(ScratchDirMixin, unittest.TestCase):
     def setUp(self):
         import json
         import os
